@@ -55,6 +55,8 @@ and uses relative pathing from there to get to your Squid\etc\squid\squid.conf F
 then restarts the service to pick up the changes. 
 
 
+
+INSTALL SQUID
 Firstly, to Install Squid for Windows Proxy, download from their website:
 
 Website:
@@ -76,6 +78,9 @@ https://packages.diladele.com/squid/4.14/squid.msi
 
 
 
+
+
+DOWNLOAD SQUID SCRIPTS
 Secondly, download the "SquidScripts" from this repository 
 
 
@@ -90,7 +95,7 @@ but keep them in the SAME STRUCTURE they're in!!
 Just Run the "InstallConfig.bat" as ADMIN
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you're worried about running some random batch file from the internet as admin, i assure you, this does only and exatly whats it says on the Tin. 
+If you're worried about running some random batch file from the internet as admin, i assure you, this does only and exactly whats it says on the Tin. 
 
 
 but, you can always:
