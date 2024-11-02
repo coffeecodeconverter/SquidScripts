@@ -1,7 +1,28 @@
+Squid For Windows (Proxy Server) 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+https://github.com/diladele/squid-windows
+https://packages.diladele.com
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
 # SquidScripts
 Automation Scripts for "Squid for Windows" proxy
 
- A list of batch files, for easy install and Configuration of Squid proxy, including:
+
+The purpose is to make configuring Squid for Windows as easy as possible. 
+Because running the MSI just installs the service, set it to automatic, and thats it. 
+You still need to (ideally) put a shortcut to the Squid System tray icon in startup.
+You need to make sure the WinHTTP stack and WinINET are both using the proxy - default is 127.0.0.1:3128 
+You then also need to configure your ACL's and block Rules. 
+and then restart the service to pick up the changes.
+thats BARE minimum to get it actually "working" instead of just "installed and running" 
+
+
+thats where these SquidScripts Come in. 
+It goes much further, and creates easy ways to fully enable, disable, enforce, and configu squid in seconds. 
+
+
+A list of batch files, for easy install and Configuration of Squid proxy, including:
  - creating shortcut in startup for the Squid System Tray Icon
  - selecting your Squid ACLs and Rules from predefined blocklists (Block windows update, Block Telemetry, both, or none)
  - setting WinHTTP API to use Squid proxy 
