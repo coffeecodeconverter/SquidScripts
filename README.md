@@ -14,6 +14,22 @@ Automation Scripts for "Squid for Windows" proxy
  - Creates shortcuts to Start Menu for Proxy Disable / Enable / Show scripts 
  - Creates Scheduled Task on startup, that enforces WinHTTP / WinINET / EnvVar settings, and Squid Proxy
 
+includes 4 x preconfigured Squid.conf files:
+- Block Windows Update
+- Block Windows Telemetry
+- Block Both
+- Block Nothing (essentially, same as a default squid.conf)
+
+you can edit the InstallScript.bat if you want, to add more options
+and then add a corresponding squid.conf to the "_Configs\" folder that comes with the SquidScripts. 
+
+When using InstallConfig.bat to select a block list, 
+It backs up any existing squid.conf with a timestamp, so you never lose a one by mistake. 
+It finds the install directory by checking the "squidsrv" service binPath, 
+and uses relative pathing from there to get to your Squid\etc\squid\squid.conf File.
+then restarts the service to pick up the changes. 
+
+
 Firstly, to Install Squid for Windows Proxy, download from their website:
 
 Website:
@@ -22,7 +38,9 @@ https://packages.diladele.com
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 PLEASE NOTE:
+
 Specifically download "Squid for Windows" MSI
+
 NOT the Web Proxy for Windows...thats something else entirely. 
 
 Direct Download of Version 4.14 -(correct as of 20/10/2024)
@@ -30,6 +48,7 @@ Direct Download of Version 4.14 -(correct as of 20/10/2024)
 https://packages.diladele.com/squid/4.14/squid.msi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 (otherwise, get the latest from the main site) 
+
 
 
 Secondly, download the "SquidScripts" from this repository 
