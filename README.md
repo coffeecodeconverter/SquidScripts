@@ -77,10 +77,32 @@ https://packages.diladele.com/squid/4.14/squid.msi
 
 
 Secondly, download the "SquidScripts" from this repository 
+
+
 copy the entire squid Scripts folder somewhere on your machine. 
 or keep them in the root of your Squid Install Dir, doesnt matter. 
+
+
 but keep them in the SAME STRUCTURE they're in!!
+
 (the installConfig.bat file expects certain files in certain places)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Just Run the "InstallConfig.bat" as ADMIN
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you're worried about running some random batch file from the internet as admin, i assure you, this does only and exatly whats it says on the Tin. 
+
+
+but, you can always:
+- run in a VM first
+- Paste it into chatGPT / claude / Gemini / CoPilot / ANY ai you can think of and get it to verify for you for speed.
+- open the scripts in notepad and check them yourself.
+
+
+  i created these to make it easier for myself, given the numerous extra little steps you have to do.
+
+  and thought, why not share it with the world.
+
+  simple as that
+
+  
