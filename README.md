@@ -1,6 +1,7 @@
 # SquidScripts
 Automation Scripts for "Squid for Windows" proxy
-a list of batch files, for easy install and Conifguration of Squid proxy, including:
+
+ A list of batch files, for easy install and Configuration of Squid proxy, including:
  - creating shortcut in startup for the Squid System Tray Icon
  - selecting your Squid ACLs and Rules from predefined blocklists (Block windows update, Block Telemetry, both, or none)
  - setting WinHTTP API to use Squid proxy 
